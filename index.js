@@ -7,4 +7,5 @@ function updateObjectWithKeyAndValue(object, key, value)
   
 }
 
-// 
+// it does not modifythe original object, but rather returns a clone with the new data:
+function 
