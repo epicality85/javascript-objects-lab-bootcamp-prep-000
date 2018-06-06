@@ -1,12 +1,13 @@
 // defines a `recipes` object:
 var recipes = {}
-/*
+
 // returns an object with the original key value pairs and the new key value pair:
 function updateObjectWithKeyAndValue(object, key, value)
 {
-  recipes[key] = value
-  return recipes
-}*/
+  var obj = { key: value }
+  var retObj = object.assign(obj)
+  return retObj
+}
 
 // it does not modify the original object, but rather returns a clone with the new data:
 function updateObjectWithKeyAndValue(object, key, value)
