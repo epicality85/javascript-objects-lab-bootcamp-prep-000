@@ -12,7 +12,8 @@ function updateObjectWithKeyAndValue(object, key, value)
 function updateObjectWithKeyAndValue(object, key, value)
 {
   var retObj = Object.assign({}, recipes)
-  
+  retObj[key] = value
+  return retObj
 }
 
 // updates `object` with the given `key` and `value` (it is destructive) and returns theentire updated object:
